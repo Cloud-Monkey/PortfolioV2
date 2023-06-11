@@ -13,32 +13,33 @@ body {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 0; */
     width: 100%;
-    padding: 20px 10%;
+    padding: 1rem;
     background: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     z-index: 100;
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
 }
 
 .navbar a {
-    font-size: 18px;
+    font-size: 1rem;
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 2rem;
     transition: .3s;
+    
 }
 
 .navbar a:hover,
@@ -47,10 +48,6 @@ body {
 }
 
 .home {
-    height: 100vh;
-    /* background: url('./linkedinprofilepic.jpeg') no-repeat; */
-    /* background-size: contain; */
-    /* background-position: right; */
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -58,92 +55,28 @@ body {
 
 .home-content {
     /* background: #00abf0; */
-    max-width: 600px;
+    /* max-width: 600px; */
     /* border-radius: 4px; */
 }
 
 .home-content h1 {
-    font-size: 56px;
-    font-weight: 700px;
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     color: #00abf0;
 }
 
 .home-content p {
-    font-size: 16px;
-    margin: 20px 0 40px;
-}
-
-.home-content .btn-box {
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
-
-.btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.btn-box a:hover {
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover {
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before {
-    background: #00abf0;
-}
-
-.btn-box a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #081b29;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover::before {
-    width: 100%;
+    font-size: 1rem;
+    margin: 1.25rem 0 2.5rem;
 }
 
 .home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
+    padding: 1rem;
 }
 
 .home-sci a {
@@ -151,12 +84,12 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background: transparent;
     border: 2px solid #00abf0;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #00abf0;
     text-decoration: none;
     z-index: 1;
@@ -186,8 +119,8 @@ body {
 
 .circle-container {
     display: flex;
-    justify-content: right;
-    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
   }
   
   .circle {
@@ -202,6 +135,29 @@ body {
     height: 100%;
     object-fit: cover;
   }
+
+.menu-top-item { grid-area: menu-top; }
+
+.main-content-item { 
+    grid-area: main-content;
+    padding: 1rem;
+}
+
+.right-pic-item { grid-area: right-pic; }
+
+.footer-item { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu-top menu-top'
+    'main-content right-pic'
+    'footer footer';
+  gap: 1rem;
+}
+
+
+
   
 
 
