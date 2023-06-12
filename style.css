@@ -148,6 +148,15 @@ body {
     'footer footer';
 }
 
+.portfolio-grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      'menu-top'
+      'main-content'
+      'footer';
+  }
+
 @media only screen and (max-width: 600px) {
     .grid-container {
         grid-template-columns: 100%;
